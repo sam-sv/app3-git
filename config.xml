@@ -5,14 +5,14 @@ xmlns:gap ="http://phonegap.com/ns/1.0"
 id ="com.phonegap.eample1"
 version ="1.0.0">
 
-<name>app2 Contaminacion </name>
+<name>app3 Contaminacion </name>
 
 <description>
-Aplicacion que muestra los DATOS del alumno 
+Aplicacion de la Contaminacion 
 </description>
 
 <author href="https://build.phonegap.com" email="samasv1402@gmail.com">
-Datos del autor
+Samantha Solis Villegas
 </author>
 
 <!--Personaliza la aplicacion  plataforma-->
@@ -31,7 +31,7 @@ Datos del autor
 <plugin name="cordova-plugin-dialogs" spec="~1.3.1"/>
 
 <!--<plugin name="cordova-plugin-geolocation"source="npm"/>-->
-  <!--Third party plugins-->
+  <!--Third part plugins-->
   
     <!--Colocar icono app-->
 	
