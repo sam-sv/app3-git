@@ -1,0 +1,331 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Tercera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/tema-app3.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/feliz.jpg','imagenes/trsite.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+<h1>La Contaminación</h1>
+</div>
+<center>
+<br>
+<br>
+<!-- Start WOWSlider.com BODY section -->
+<div id="wowslider-container1">
+<div class="ws_images"><ul>
+		<li><img src="data1/images/arbol.jpg" alt="arbol" title="arbol" id="wows1_0"/></li>
+		<li><img src="data1/images/estornudo.jpg" alt="estornudo" title="estornudo" id="wows1_1"/></li>
+		<li><img src="data1/images/feliz.jpg" alt="feliz" title="feliz" id="wows1_2"/></li>
+		<li><img src="data1/images/arbolito.jpg" alt="arbolito" title="arbolito" id="wows1_3"/></li>
+		<li><img src="data1/images/logo.png" alt="logo" title="logo" id="wows1_4"/></li>
+		<li><img src="data1/images/trsite.jpg" alt="trsite" title="trsite" id="wows1_5"/></li>
+		<li><img src="data1/images/audifono.jpg" alt="audifono" title="audifono" id="wows1_6"/></li>
+		<li><a href="http://wowslider.com"><img src="data1/images/tem.jpg" alt="jquery slider" title="tem" id="wows1_7"/></a></li>
+		<li><img src="data1/images/ruido.jpg" alt="ruido" title="ruido" id="wows1_8"/></li>
+	</ul></div>
+	<div class="ws_bullets"><div>
+		<a href="#" title="arbol"><span><img src="data1/tooltips/arbol.jpg" alt="arbol"/>1</span></a>
+		<a href="#" title="estornudo"><span><img src="data1/tooltips/estornudo.jpg" alt="estornudo"/>2</span></a>
+		<a href="#" title="feliz"><span><img src="data1/tooltips/feliz.jpg" alt="feliz"/>3</span></a>
+		<a href="#" title="arbolito"><span><img src="data1/tooltips/arbolito.jpg" alt="arbolito"/>4</span></a>
+		<a href="#" title="logo"><span><img src="data1/tooltips/logo.png" alt="logo"/>5</span></a>
+		<a href="#" title="trsite"><span><img src="data1/tooltips/trsite.jpg" alt="trsite"/>6</span></a>
+		<a href="#" title="audifono"><span><img src="data1/tooltips/audifono.jpg" alt="audifono"/>7</span></a>
+		<a href="#" title="tem"><span><img src="data1/tooltips/tem.jpg" alt="tem"/>8</span></a>
+		<a href="#" title="ruido"><span><img src="data1/tooltips/ruido.jpg" alt="ruido"/>9</span></a>
+	</div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.com">http://wowslider.com/</a> by WOWSlider.com v8.7</div>
+<div class="ws_shadow"></div>
+</div>	
+<script type="text/javascript" src="engine1/wowslider.js"></script>
+<script type="text/javascript" src="engine1/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+</center>
+<br>
+<br>
+<div>
+  <ul data-role="listview" data-theme="b" class="ui-listview ui-group-theme-b">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Qué es?...</h2>
+ <p>Definición...</p>
+ </a>
+ </li>
+ <li class="ui-first-child ui-last-child">
+ <a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Tipos de Contaminación</h2>
+  <p>¿Cúantos hay?...</p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Concecuencias </h2>
+  <p> El Calentamiento global</p>
+  </a>
+  </li>
+   <li class="ui-first-child ui-last-child">
+ <a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2> Medidas Preventivas</h2>
+  <p> Resicleje </p>
+  </a>
+  </li>
+  <li class="ui-first-child ui-last-child">
+ <a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+  <h2>Contaminación en mi Entorno</h2>
+  <p> Propuesta para Combatirla</p>
+  </a>
+  </li>
+  </ul>
+</div>
+ <br>
+  <br>
+<center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/feliz.jpg',1)"><img src="imagenes/trsite.jpg" name="Image4" width="166" height="194" id="Image4"></a></center>
+<br>
+<br>
+  <div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <img src="imagenes/logo.png" width="128" height="128">
+  </div>
+  <div>
+  <h4>Aplicación Tres</h4>
+  <h4>Samantha Solis Vilegas </h4>
+  </div>
+  </div>
+</div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>¿Qué es la Contaminación?</h1>
+  </div>
+  <br>
+  <br>
+  <center><a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/trsite.jpg',1)"><img src="imagenes/feliz.jpg" name="Image6" width="132" height="137" id="Image6"></a></center>
+<div data-role="content" align="center">
+<br>
+  <br>
+  <br>
+  <br>
+  <div data-role="collapsible" data-content-theme="false">
+<h1> Definición </h1>
+  <p> La contaminación es la introducción de algún tipo de sustancia o energía que atenta contra el normal funcionamiento y equilibrio que sostentaba el medio inicialmente, provocando además un gran daño casi irreversible. </p>
+  <p> La contaminación que se da sobre y contra el medio ambiente (que tantos los seres humanos como los animales y plantas utilizamos para vivir y desarrollarnos) se denomina contaminación ambiental, siendo la presencia en el ambiente de algún tipo de agente físico, químico o biológico o la combinación de alguno de estos, la que producirá este desequilibrio del que hablábamos más arriba y que resulta ser ampliamente nocivo para la salud, seguridad o bienestar de los habitantes de cualquier nación y por supuesto lo es también para el resto de los seres vivos, como las plantas y animales. </p>
+  </div>
+  <img src="imagenes/su.jpg" width="282" height="145"> </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <div>
+  <center><img src="imagenes/logo.png" width="128" height="128"></center>
+  </div>
+  <h4> Aplicacion Tres, SSV  </h4>
+  </div>
+  </div>
+  
+  <div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b"
+  <h1><center>Tipos de Contaminación</center></h1>
+  </div>
+  <div data-role="content" align="center">
+  <img src="imagenes/tipos.jpg" width="185" height="188">
+   <p> Existen diferentes tipos de contaminación, los cuales están clasificados por la parte que afectan o las causas de contaminación particulares que llegan a tener. Cada uno de estos tipos tiene sus propias causas y consecuencias distintivas. El estudio de la contaminación ambiental ayuda a entender los conceptos básicos con mayor detalle y producir protócolos para los tipos específicos. </p>
+  <p>En consecuencia, los principales tipos de contaminación son los siguientes: </p>
+   <br>
+  <br>
+  <br>
+  <div data-role="collapsible" data-content-theme="false">
+<h1> Contaminación del Agua </h1>
+<p> Como su nombre lo sugiere, “Contaminación del agua” es el tipo de contaminación que perjudica a los distintos cuerpos de agua que existen en nuestro planeta. Varias criaturas acuáticas dependen de estos cuerpos de agua y sus características naturales nutritivos para apoyar su vida. </p>
+<img src="imagenes/agua.jpg" width="424" height="240">
+<h1> ¿Qué causa la contaminación del agua? </h1>
+<p><li>Los residuos industriales se vierten en estos cuerpos de agua. Esto provoca un desequilibrio químico en el agua que conduce a la muerte de los seres acuáticos.</li></p>
+<br>
+<p><li>Lavar la ropa cerca de lagos y ríos detergentes causa una enfermedad llamada “eutrofización”, que bloquea la luz del sol entre en el interior y reduce los valores de oxígeno en el agua, causando un ambiente inhabitable. </li></p>
+<br>
+<p><li> Derrames de petróleo’ son causados ​​cuando los buques petroleros gigantes y plataformas petrolíferas que están presentes en los océanos están dañadas por cualquiera tipo de error humano o natural causando un daño a largo tiempo para el océano. Como el petróleo es más ligero que el agua, flota sobre el agua formando una capa de bloqueo del luz del sol. </li></p>
+</div>
+ <br>
+  <br>
+  <br>
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminación del Suelo </h1>
+<p> También se le conoce como contaminación de la tierra. Este tipo de contaminación es la que ocurre cuando el suelo natural se ve perjudicado por la presencia de ciertos agentes y también debido a ciertas prácticas. Afecta el desarrollo de la vida natural, perjudica los cultivos y también arruina las zonas habitables.</p>
+<p>Algunas causas comunes de este tipo de contaminación son las prácticas granjeras no sustentables, lanzamiento de desperdicios peligrosos en el suelo, minería, acumulación de basura, tala de árboles; entre otros.La contaminación del suelo puede traer como consecuencia una reducción en el desarrollo de la agricultura y el envenenamiento de las fuentes de agua a través de la tierra.</p>
+<br>
+<img src="imagenes/suelo.jpg" width="340" height="213">
+</div>
+  </div>
+  <br>
+  <br>
+  <br>
+  <div data-role="content" align="center">
+<div data-role="collapsible" data-content-theme="false">
+<h1> Contaminación del Aire </h1>
+<p> Se refiere al efecto negativo que algunos agentes contaminantes como el humo de los vehículos y otros químicos tienen en el aire. Este tipo de contaminación también puede ser causada por la emisión de ciertos gases que se desprenden al momento de quemar algunos materiales, asimismo, puede ser provocada por los gases  que producen algunas industrias. </p>
+<p> La gran acumulación de agentes contaminantes en el aire es difícil de remover efectivamente a través de ciclos naturales y ésto tiene como resultado que muchos seres vivos (incluyendo a los humanos) desarrollan problemas respiratorios.Algunos de los efectos negativos de este tipo de contaminación tienen que ver con el aumento de la niebla tóxica, lluvia ácida y altos índices de asma en la población.</p>
+<img src="imagenes/aire.jpg" width="758" height="427">
+</div>
+<br>
+  <br>
+  <br>
+  <div data-role="collapsible" data-content-theme="false">
+<h1> Contaminación del Acustica </h1>
+<p>iene que ver con el ruido creado por actividades humanas que crea disturbios en los estándares de vida de las áreas afectadas. La contaminación acústica o auditiva puede deberse al tráfico (en el caso de las grandes cuidades), trenes, conciertos, música a alto volúmen, aviones y fuegos artificiales. </p>
+<p> Cualquier caso en el que el ruido interfiera con la habilidad de concentración y de ejecución de las personas o demás especies puede ser considerado como contaminación acústica.
+Algunas de las peores consecuencias de este problema es la pédida total o parcial de la capacidad auditiva.</p>
+<img src="imagenes/ruido.gif" width="322" height="249">
+</div>
+<br>
+  <br>
+  <br>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <center><img src="imagenes/logo.png" width="128" height="128"></center>
+  <h4>Aplicacion Tres, SSV </h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1>Conceuencias</h1>
+  </div>
+  <br>
+  <center><img src="imagenes/humo.jpg" width="352"></center>
+  <br>
+  <p><center> La contaminación ambiental deteriora cada vez mas a nuestro planeta y a nosotros mismos pues según investigaciones al respirar el aire contaminado esto afecta nuestra salud cardiovascular por lo que normas estrictas de aire limpio contribuirían a una mejor salud con efectos en gran escala. </center></p>
+<p><center>Otra consecuencia es el debilitamiento de la capa de ozono, que protege a los seres vivos de la radiación ultravioleta del Sol, debido a la destrucción del ozono estratosférico y esto provoca el calentamiento global.La contaminacion al medio atenta contra la vida de plantas, animales y personas, genera daños físicos en los individuos, convierte en un elemento no consumible al agua y hace que en los suelos contaminados no sea posible la siembra. Esto afecta  a demás el clima y las actividades realizadas por el ser humano dañandolo y perjudicándole. </center></p>
+<br>
+  <br>
+  <br>
+  <div data-role="collapsible" data-content-theme="false">
+<h1> ¿Sabes lo que es el Calentamiento Global?... </h1>
+<p><center> Los glaciares se están derritiendo, el nivel del mar aumenta, las selvas se están secando y la fauna y la flora lucha para seguir este ritmo. Cada vez es más evidente que los humanos han causado la mayor parte del calentamiento del siglo pasado, mediante la emisión de gases que retienen el calor, para potenciar nuestra vida moderna. Llamamos gases de invernadero y sus niveles son cada vez más altos, ahora y en los últimos 65.000 años. </center></p>
+<p><center> Llamamos al resultado calentamiento global pero está provocando una serie de cambios en el clima de la Tierra o patrones meteorológicos a largo plazo que varían según el lugar. Conforme la Tierra gira cada día, este nuevo calor gira a su vez recogiendo la humedad de los océanos, aumentando aquí y asentándose allá. Está cambiando el ritmo del clima al que todos los seres vivos nos hemos acostumbrado. </center></p>
+<p><center> La temperatura media global y las concentraciones de dióxido de carbono (uno de los principales gases de invernadero) han fluctuado en un ciclo de cientos de miles de años conforme ha ido variando la posición de la Tierra respecto del sol. Como resultado, se han producido las diferentes edades de hielo. </center></p>
+</div>
+<br>
+<div>
+<center><img src="imagenes/tem.jpg" width="390"></center>
+</div>
+</div>
+</div>
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1> Resiclaje </h1>
+  </div>
+  <br>
+  <center><img src="imagenes/resi.jpg" width="260"></center>
+  <br>
+  <p><center> El reciclaje consiste en obtener una nueva materia prima o producto, mediante un proceso fisicoquímico o mecánico, a partir de productos y materiales ya en desuso o utilizados. De esta forma, conseguimos alargar el ciclo de vida de un producto, ahorrando materiales y beneficiando al medio ambiente al generar menos residuos.El reciclaje surje no sólo para eliminar residuos, sino para hacer frente al agotamiento de los recursos naturales del planeta. </center></p>
+<p><center> Todo este proceso del reciclaje, pasa por varias fases: <br>
+El reciclaje comienza en entornos industriales y domésticos, mediante la separación de los materiales. El siguiente paso consiste en la recuperación de estos materiales por las empresas públicas y privadas y su posterior traslado a las plantas de transferencia. </center></p>
+<br>
+  <br>
+<p> Aqui te dejamos algunas páginas de reciclaje </p>
+ <br>
+<div data-role="collapsible" data-content-theme="false">
+ <h1> ProAmbi </h1>
+ <br>
+ <center><img src="imagenes/pro.png"></center>
+ <br>
+ <center>
+   <strong><a href="http://www.proambi.com/"> ProAmbi </a></strong>
+ </center>
+  <br>
+  <br>
+</div>
+<div data-role="collapsible" data-content-theme="false">
+ <h1> Redcicla </h1>
+ <br>
+ <center><img src="imagenes/red.jpeg"></center>
+ <br>
+ <center>
+   <strong><a href="http://www.redcicla.com/"> Redcicla </a></strong>
+ </center>
+  <br>
+  <br>
+  </div>
+<div data-role="collapsible" data-content-theme="false">
+ <h1> Pagina Verde </h1>
+ <br>
+ <center><img src="imagenes/verde.gif"></center>
+ <br>
+ <center>
+   <strong><a href="http://laspaginasverdes.com/categoria/reciclaje-desechos/"> Pagina Verde </a></strong>
+ </center>
+  <br>
+  <br>
+  </div>
+  </div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="b">
+  <h1> Mi Entorno </h1>
+  </div>
+  <h2> La Contaminación en mi Entorno... </h2>
+  <br> 
+  <p><center> La contaminación esta en mi entorno como en todos lados una de estos problemas es...</center></p>
+  <br>
+  <li>LA BASURA </li>
+  <p> Este es el problema más frecuente que hay en cualquier lugar. </p>
+  <br>
+  <img src="imagenes/basu.jpg" width="441" height="330">
+  <br>
+  <br>
+  <br>
+  <li> EL HUMO DE LOS AUTOS </li>
+  <img src="imagenes/auto.jpg" width="350">
+  <br>
+  <br>
+  <br>
+  <li> LAS BOCINAS DE LOS AUTOS </li>
+  <img src="imagenes/autos.jpg" width="360">
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1> Propuesta </h1>
+ <p> Mi propuesta para este problema es hablar con las autoridades para pedirles que pongan más botes de basura y al mismo tiempo hablar con las personas que pasan por las calles y hacerles entender que la baura se tira en los contenedores. </p>
+ <p> También pienso que seria bueno hablar con las personas que estoy cerca y explicar lo que esta pasando en nuestro planeta.</p>
+ </div>
+   <br>
+  <br>
+  <br>
+</body>
+</html>
